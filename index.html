@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="shortcut icon" href="images/s_icon.ico" type="image/x-icon">
+    <link rel="icon" href="images/s_icon.ico" type="image/x-icon">
+    <title>scrapyard</title>
+    
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Londrina+Shadow::latin', 'Lato:400,900:latin', 'Alegreya:900italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+    
+       
+        
+function imgTransp() {
+    document.getElementById("imgID").style.opacity = "0.5"}
+function imgOpac() {
+    document.getElementById("imgID").style.opacity = "1.0"}
+    
+      
+function toggleMe(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+}
+else{
+e.style.display="none"
+}
+return true;
+}
+        
+           
+        
+    </script>
+     
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+   
+ 
+    
+<body id="page-top" class="index">
+
+    
+ <?php
+
+session_start();
+
+$_SESSION['emailMain'] = $email;
+
+?>  
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">scrapyard</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#signUp">Sign Up</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#search1">search</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#Featured">Featured</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="Loginuser.php">Log in</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                
+                <div class="intro-lead-in">scrapyard<h3 class="intro-desc">Learn it. Do it.</h3></div>
+                
+                
+              
+                <a href="#signUp" class="page-scroll btn btn-xl">Start</a>
+            </div>
+        </div>
+    </header>
+ 
+                         
+    
+<!-- ___________________________SIGN UP_____________________________ -->
+                    
+                    
+      
+    <section id="signUp" >
+        <div class="container">
+        <div class="row">
+            <div class="text-center col-margin"> 
+            
+                    <h2 class="section-heading">Sign up</h2>
+                    <h3 class="section-subheading">Register for full experience</h3>
+               </div>
+    </div>
+                 
+    
+          
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+
+                 
+
+  
+                
+              
+                    
+                    <form action="Signupupdated.php" method="get" role="form" id="contactForm" novalidate >
+                 
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls enter1" width="100px">
+                     <!--          <div style="background-color: rgba(31, 29, 29, 0.65);">
+                             <input class="text-center" type="email" name="emailMain" value="" class="form-control" placeholder="enter email" id="signUpemail" required data-validation-required-message="Please enter your email address."      >
+                                
+                                
+                     
+                                
+                                <p class="help-block text-danger" style="color: #fff; font-size: 20px"></p>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                 
+                        <br> 
+                       
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                
+                               <a href="Signupupdated.php" class="page-scroll btn btn-xl" >JOIN</a>
+                              <!-- <a href="Signupupdated.php" class="page-scroll btn btn-xl">JOIN</a> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+ 
+   
+    
+    
+</form>
+    </section>   
+    
+    
+    
+    
+    
+    <!-- ___________________________SEARCH_____________________________ -->
+                    
+                    
+      
+    <section id="search1" class="search1" >
+        <div class="container search-text">
+        <div class="row">
+            <div class="text-center col-margin"> 
+            
+                    <h2 class="section-heading" style="margin-top: 40px">Search tutorials</h2>
+                    
+               </div>
+            
+            <div class="form-group col-xs-12 floating-label-form-group  enter1" width="100px">
+                               <div style="background-color: rgba(31, 29, 29, 0.74);"> 
+                                <input class="text-center"   placeholder="enter keyword"  >
+    </div>
+                <div class="row">
+                            <div class="form-group col-xs-12">
+                               <a href="#search1" class="page-scroll btn btn-xl"><i class="glyphicon glyphicon-circle-arrow-right bigArrow"></i></a>
+                            </div>
+                        </div>
+                
+            </div>
+            
+    </div>
+                
+    
+
+        </div>
+ 
+    
+    </section>   
+    
+    
+    
+<!-- ---------------------Featured Tutorials----------------------------->
+    
+    <section id="Featured" class="bg-slight-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center col-margin">
+                    <h2 class="section-heading">Featured Tutorials</h2>
+                    
+                </div>
+            </div>
+            
+            <div class="row text-center">
+                
+          
+                
+                <!-- 1 -->
+                <div class="col-md-4 col-margin" >
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="HowTobeMan.html">
+                    <h4 class="service-heading">Be confident</h4></a>
+                  
+                    <p class="grow pic"><a href="HowTobeMan.html"><img  src="images/CartoonMan.jpg" alt="Be a Confident Person"  ></a></p>
+                    
+                    <p ><a class="btn btn-default" onclick="return toggleMe('para1')" role="button">More Details &raquo;</a></p>
+                        <span style="display:none" id="para1"> How-To member Anso Georges gives his own tutorial on how to be confident     
+                </div>
+                    
+                    
+                 <!-- 2 -->
+                <div class="col-md-4 col-margin" >
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="HowToPage.html">
+                    <h4 class="service-heading">Change a flat tire</h4></a>
+                  
+                    <p class="grow pic"><a href="HowToPage.html"><img   src="images/Flat-tire.png" alt="Change a flat tire"  ></a></p>
+                    
+                    <p><a class="btn btn-default" onclick="return toggleMe('para2')" role="button" >More Detail &raquo;</a></p>
+<span style="display:none" id="para2"> If you ever drive over a nail or your tire happens to blow due to a bad tire, we will teach you how to change a flat tire  
+                </div>
+                 
+                
+                 <!-- 3 -->
+                <div class="col-md-4 col-margin" >
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="#Featured">
+                    <h4 class="service-heading">Troubleshooting RAM</h4></a>
+                  
+                    <p class="grow pic"><a href="#Featured"><img   src="images/computerFix.jpg" alt="Troubleshooting RAM"  ></a></p>
+                    
+                    <p><a class="btn btn-default" onclick="return toggleMe('para3')" role="button" >More Detail &raquo;</a></p>
+<span style="display:none" id="para3"> Computer or laptop running slow? Not sure what the problem is? Scrapyard teaches you how to troubleshoot your computer memory (RAM)
+                </div>
+                    
+            </div>
+            <div class="row text-center">
+                    
+            
+                     <!-- 4 -->
+                <div class="col-md-4 col-margin" >
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="#Featured">
+                    <h4 class="service-heading">Essential Tricks: Windows</h4></a>
+                  
+                    <p class="grow pic"><a href="#Featured"><img   src="images/windows4.png" alt="Essential Tricks: Windows"  ></a></p>
+                    
+                    <p><a class="btn btn-default" onclick="return toggleMe('para4')" role="button" >More Detail &raquo;</a></p>
+<span style="display:none" id="para4"> Essential tips and tricks on tweaking your Windows Computer/Laptop/Phone
+                </div>
+                    
+                    <!--5 -->
+                <div class="col-md-4 col-margin" >
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="#Featured">
+                    <h4 class="service-heading">Essential Tricks: Apple</h4></a>
+                  
+                    <p class="grow pic"><a href="#Featured"><img   src="images/RainbowApple.jpeg" alt="Essential Tricks: Apple"  ></a></p>
+                    
+                    <p><a class="btn btn-default" onclick="return toggleMe('para5')" role="button" >More Detail &raquo;</a></p>
+<span style="display:none" id="para5"> Essential tips and tricks on tweaking your Apple Computer/Laptop/Phone
+                </div>
+                    
+                    
+                      <!--6 -->
+                <div class="col-md-4 col-margin" >
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <a href="#Featured">
+                    <h4 class="service-heading">Perform a Plié</h4></a>
+                  
+                    <p id="imgID" class="grow pic"><a href="#Featured"><img src="images/balletShoes.jpg" alt="Perform a Plié"  ></a></p>
+                    
+                    <p><a class="btn btn-default" onclick="return toggleMe('para6')" role="button" >More Detail &raquo;</a></p>
+<span style="display:none" id="para6">  Plie is used in all dance styles including ballet, and it's used as a transitional step, or a cushion for the end of a jump or the beginning of the jump to give you power and strength
+                </div>
+                    
+                    
+            </div>
+        </div>
+    </section>
+
+
+                
+<!-- ---------------------TEAM----------------------------->
+    
+    <section id="team" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center col-margin">
+                    <h2 class="section-heading">Team</h2>
+                    
+                </div>
+            </div>
+            
+            <div class="row text-center">
+                
+          
+                
+                <!-- t1 -->
+                <div class="col-md-4 col-margin" >
+                <p class="pic2"><img  src="images/CartoonMan.jpg" alt="Brayan D."  ></p>
+                <h4 class="service-heading">Brayan D.</h4>
+                </div>
+                    
+                <!-- t2 -->
+                <div class="col-md-4 col-margin" >
+                <p class="pic2"><img  src="images/CartoonMan.jpg" alt="Brayan D."  ></p>
+                <h4 class="service-heading">Terry L.</h4>
+                </div>
+                
+                <!-- t3 -->
+                <div class="col-md-4 col-margin" >
+                <p class="pic2"><img  src="images/CartoonMan.jpg" alt="Brayan D."  ></p>
+                <h4 class="service-heading">Anso B.</h4>
+                </div>
+                
+                    
+            </div>
+            <div class="row text-center">
+                    
+                <!-- t4 -->
+                <div class="col-md-4 col-margin" >
+                <p class="pic2"><img  src="images/CartoonMan.jpg" alt="Brayan D."  ></p>
+                <h4 class="service-heading">Andrew G.</h4>
+                </div>
+                
+                <!-- t5 -->
+                <div class="col-md-4 col-margin" >
+                <p class="pic2"><img  src="images/CartoonMan.jpg" alt="Brayan D."  ></p>
+                <h4 class="service-heading">Brandon J.</h4>
+                </div>
+                
+                <!-- t6 -->
+                <div class="col-md-4 col-margin" >
+                <p class="pic2"><img  src="images/CartoonMan.jpg" alt="Brayan D."  ></p>
+                <h4 class="service-heading">Miguel M.</h4>
+                </div>    
+                    
+            </div>
+        </div>
+    </section>                
+                
+
+                                
+ 
+      <hr>
+
+      <footer>
+        <p>&copy; 2014 Scrapyard Media - Boca Raton, Florida </p>
+      </footer>
+ 
+
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    
+    
+        <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    
+    
+  </body>
+</html>

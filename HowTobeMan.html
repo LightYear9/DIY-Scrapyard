@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!--
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to blog post</title>
+
+    <!-- Bootstrap -->
+  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="shortcut icon" href="images/s_icon.ico" type="image/x-icon">
+    <link rel="icon" href="images/s_icon.ico" type="image/x-icon">
+    <title>scrapyard</title>
+    
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Londrina+Shadow::latin', 'Lato:400,900:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+    
+function imgTransp() {
+    document.getElementById("imgID").style.opacity = "0.5"}
+function imgOpac() {
+    document.getElementById("imgID").style.opacity = "1.0"}
+    
+      
+function toggleMe(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+}
+else{
+e.style.display="none"
+}
+return true;
+}
+        
+           
+        
+    </script>
+     
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body>
+  <!--
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Scrapyard How to's</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <a href="YourProfilePage.html" type= "text-align right" button type="submit" class="btn btn-success">Sign in </a>
+            <a href="SignUp.html" type= "text-align right" button type="submit" class="btn btn-success">Sign up </a>
+          </form>
+        </div><!--/.navbar-collapse -->
+     <!-- </div>
+   <!-- </div> 
+	-->
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">scrapyard</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#signUp">Sign Up</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#Featured">Featured</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="YourProfilePage.html">Log in</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">Learn How to be a real man</h1>
+        <p class="lead blog-description">Learn from the Pro Like your  father, your uncle, your teacher, etc.</p>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Know Yourself</h2>
+				<p class="blog-post-meta">September 26, 2014 by <a href="AnsoProfile.html">Georges</a></p>
+	
+				<p>Find out who you are and be happy with that person. There's no one way to be a man.</p>
+				
+				<p>A real man can be a logger who wears plaid and doesn't shower for 10 days; a real man can also be a professor who talk</p>
+				 <img src="http://www.imom.com/wp-content/uploads/2014/06/tweens_10_things_every_mom_can_teach_her_son_to_be_a_real_man_web.jpg">
+            <hr>
+				<p>It doesn't really matter what it is, but you should consider yourself pretty familiar with one area of expertise. Men may not be able to or want to use fancy, two-dollar words, but when it comes time to getting things done, they know how to act. They use their smarts to get it done. What area of expertise do you know? Here are just a few areas you might consider diving into.  </p>
+            <blockquote>
+			  <h3>Think like a man </h3>
+				<p>General knowledge. You're the jack of all trades. You could win a pretty <strong>penny on Jeopardy!</strong> if you cared at all about being on TV. You know the difference between participles and parts of speech, pterodactyls and Pterorhynchus, and a $99 suit and a $6,000 suit.</p>
+				<img src="http://masilia2007.fr/image-sorties-va-think-like-a-man-1667.jpg">
+			</blockquote>
+			<h2>For Example</h2>
+				<p>Cars. Men flock to cars for the same reason they flock to <em>women</em>they're beautiful, intriguing, complex. No wonder men refer to cars in feminine terms. Maybe you're the kind of man whose buddies bring their car to when they need a clutch replaced or the oil changed.</p>
+            <h2>Be a Man</h2>
+			<img src="http://www.agoodson.com/wp-content/themes/agm/resize.php?zc=1&w=380&h=&q=100&src=http://www.agoodson.com/wp-content/uploads/2014/03/TIME-OUT-MAN.jpg"/>
+				<p>History. Increasingly rare, the man who's a student of history gives himself the benefit of a very wide lens when contemplating problems: he can draw on Roman artillery strategy, Cold War negotiating tactics, and obscure French economic policy, among others. He knows that history isn't just about preventing the mistakes of the past from happening in the future.</p>
+            <h3>women</h3>
+			<img src="http://media-cache-ec0.pinimg.com/236x/e8/2d/6b/e82d6b1a5a445e12a147c2e28d3d6002.jpg">
+				<p>Some men turn the opposite sex into a field of study. If you want to be knowledgeable about women, be prepared to make mistakes and learn from them. There's nothing worse than a man who thinks he's God's gift to women, but who's stubbornly insulting, cavalier, and clueless. </p>
+            
+			 <h3>Know when you've made a mistake and know when to say "I'm sorry." </h3>
+				<p>There's nothing wrong with making a mistake. Only the insecure man thinks that making a mistake is bad, because he's not comfortable with who he is in the first place. Confident men know when they're wrong and aren't afraid to admit it.</p>
+				<p>Learn to say "I'm sorry" in different ways. Men know that saying "sorry" doesn't always have to be verbal. A ticket to a baseball game, breakfast in bed, and a camping trip are all ways to say "I'm sorry" without moving the old vocal chords back and forth. Men know that these are often more effective ways of communicating regret than two measly words. </p>
+			<h2>Always treat your significant other with respect</h2>
+			<ul>
+				  <li>Listen to what they have to say.</li>
+				  <li>Forgive them when they make a simple mistake.</li>
+				  <li>reat them the same way you'd like to be treated.</li>
+            </ul>
+            <p>things you should not do to them</p>
+			<img src="http://3.bp.blogspot.com/-1O6pKGskidU/T6f8eAarveI/AAAAAAAABnk/1AHeocQGBK4/s1600/think-like-a-man-box-office.jpg">
+		
+            <ol>
+              <li>Manipulate them to get whatever you want..</li>
+              <li>Treat them as an object instead of a person.</li>
+              <li>Assume that you know how they'll feel or react.</li>
+            </ol>
+			<h2>Don't rush a relationship</h2>
+				<p>Lots of guys rush ladies into uncomfortable situations. By doing this, they not only alienate the lady but also keep themselves from getting what they want. Men know that when it comes to dating, the lady sets the pace: if she wants to rush into a whirlwind romance, he's usually game; if she wants to take things slower, he'll reassure her that he's there for the long-haul. By letting her set the pace, the man sets the relationship up for success and usually ends up richer in the bargain.</p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Another how to be a man</h2>
+				<p class="blog-post-meta">September 26, 2013 by <a href="AnsoProfile.html">Georges</a></p>
+				<img src="http://1.bp.blogspot.com/_4LFU-G5pyIA/S-mfo_ve6CI/AAAAAAAAAc0/213FSYVofLM/s1600/player.jpg">
+				
+			<h2>Groom yourself, unless you are living out in the woods. </h2>
+				<p>A man knows that grooming himself is essential, even if there's no one around to marvel at his perfectly kempt beard. A man fits grooming into his busy schedule.
+				Shave every day, even if you are growing a beard. Men know that women tend to dislike facial hair, but will grow it anyways if the time is ripe. Even so, men groom their facial hair on a daily basis.</p>
+            
+           <blockquote>
+              <p>Exception: you are out in the woods or living in a cabin. If you're camping, or living out in the boonies, you may grow out your facial hair as long as you want.</p>
+            </blockquote>
+				<p>Shower and bathe when necessary.<em>A man benefits</em> from showering when he is dirty or smelly — not necessarily every day, like a lady does. A man chooses to stay dirty or smelly for a good reason (he is working on a car, or about to work out).</p>
+				<p>Cut your hair and finger nails regularly. Not necessarily at the top of a man's list of grooming necessities, manicures are nonetheless important. Higher up on the list is a good haircut. Most men like no-nonsense haircuts, although some men prefer hair that is a little longer or styled.</p>
+			<H2> Exercise.</H2>
+				<P>Being a man doesn't mean you need to be ripped. It does mean you need to take care of your body. (For some men, that does mean lifting weights.) Adjust to the responsibility of being a man by keeping fit: do cardio, yoga or pilates (not only for women), strength training, or sports, combined with a healthy diet. At the very least, walk about 30 minutes a day to burn fat and build some muscle. </p>
+			<h2>Wear clothes that fit you. </h2>
+			<img src ="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwMI2T7JOAYt6XxQRw8luDu5phkjtF7t7HVRG9JcC50oQ8UhbI"\>
+				<p>Your clothes don't need to be designer or cost an arm and a leg. They do, however, need to fit you. Not all men are muscular and stocky, and therefore don't look great in baggy, loose-fitting clothes. Although skinny pants are popular nowadays, try to stay away from women's clothing if possible. All men will need: </p>
+		 <ul>
+				<li>A couple pairs of great jeans. One pair of casual jeans, one pair of work jeans, and one pair of formal jeans should round out your wardrobe. Build around the basics. </li>
+				<li>A couple button-down shirts. Again, a couple casual item, a couple for work, and a couple formal button-downs should be enough for the average man. </li>
+				<li>A couple shoes. Men probably want between three and five different kinds of shoes at any given time: formal shoes (for work and/or big occasions), tennis shoes, work boots, casual shoes (chukkas, lace-ups, sneakers, etc.), or slightly-less-than-formal shoes (oxfords, top-siders, loafers, etc.). Mix and match depending on your needs and habits. </li>
+		  </ul>
+		    <h2>Don't use drugs as a crutch </h2>
+			<img src ="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAizfv76lIzVuX7rFpS_71pTp8Z-nFq1QLj3vlfXopp44wVflC " />
+				<p>Men are born-adventurers, making the lure of drugs very real. Men who are comfortable with themselves tend not to rely on the crutch of drugs for support. Even with bills weighing them down, work staring them in the face, and personal projects (not to mention football) looming, men find a way to appreciate the beauty of life without sedating themselves. </P>
+		 </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">New feature</h2>
+				<p class="blog-post-meta">September 26, 2014 by <a href="AnsoProfile.html">Georges</a></p>
+			<h2>Develop your own principles</h2>
+				<p>A man isn't always comfortable being judge, jury, and executioner, but he knows right from wrong and expects others to play by the same rules. Look inside yourself and ask: would I want someone else doing that to me? This should help you develop principles to live by.</p>
+            <ul>
+              <li>A man never steals, even if he is desperate. A desperate man learns to ask others to help him instead of helping himself to something he is not entitled to.</li>
+              <li>A man helps others in need. He knows when others are down on their luck and need a helping hand, even if the utility lies in the gesture itself.</li>
+              <li>A man trusts his friends, significant others, and family. He follows through with what he says he'll do and expects others to do the same.</li>
+			  <li>A man never lies — to himself or others. He develops a conscience that gives him good feedback and allows him to be comfortable with the truth, even if it hurts. </li>
+			</ul>
+			
+			<h2>Be ambitious in your own way </h2>
+				<p>Men are naturally ambitious. We want to be breadwinners and have the admiration and respect of our peers. Not all men choose the same career paths, however, so ambition doesn't always amount to the same thing</p>
+				<p>Whatever career or profession you choose (you may have many), set goals for yourself, live up to or exceed them, and reinvent yourself whenever you need to. Define your own idea of success.</p>
+			<h2>Seek responsibility and take responsibility for your actions </h2>
+				<p>The main difference between a man and a boy, and adult and a child, is that men are responsible. Men honor their commitments, accept their duties and are accountable for their actions. Men clean up after themselves (figuratively and literally).</p>
+			<ul>
+				<li>Men know that anyone can father a baby, but only a man who understands and accepts responsibility can be a good father.</li>
+				<li>Men refuse to make anyone do anything they themselves are unwilling to do. As a result, they appreciate the difficulty and risk other people take on their behalf. </li>
+		    </ul>
+			<h2>Learn to make sacrifices for the people you love and care about </h2>
+				<p>Sometimes, we're stuck between a rock and hard place and there's nothing to do but bite the bullet. It's part of growing up, whether you like it or not. The difference between a man and a boy is that a man steps up to the plate, while a boy hesitates or complains. Especially for the people in his life that he loves, a man looks at sacrifice as his duty — unpleasant but impossible to avoid. </p>
+			<h2>Be a good man</h2>
+				<p>Integrity is doing the right thing, for the right reason, even when no one is watching. It can be tempting to think that by meeting your self-defined responsibilities as a man, your job is done, but that doesn't always make you a good person. Never stop trying to do the right thing and re-evaluating your character and integrity. If you're going to be a man, be a good man, or else it's no better than remaining a boy. </p>
+		<img src="http://images.idiva.com/media/photogallery/2013/May/how_to_be_a_man_magnet.jpg">
+		</div><!-- /.blog-post -->
+
+          <ul class="pager">
+            <li><a href="#">Back to Top</a></li>
+          </ul>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Think about all the <em> men you know in your life.</em>Friends. Fathers. Uncles. Brothers. Coaches. Boyfriends.</p>
+          </div>
+          <div class="sidebar-module">
+		  <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcSydgPtqLGIWWecKfWuUjr0M91azdY-3S1OXMj2FAq-jE-Yclrn"/>
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">August 2014</a></li>
+             
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+			
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+		 
+		
+		
+		
+		</div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+     <!-- <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
